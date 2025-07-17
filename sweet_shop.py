@@ -15,6 +15,12 @@ class SweetShop:
                 return True
         return False
     
+    def search_sweet_by_id(self,id):
+        for sweet in self.sweets:
+            if sweet.sweet_id == id:
+                return sweet
+        return None
+    
     def search_sweet_by_name(self,name):
         for sweet in self.sweets:
             if sweet.sweet_name == name:
@@ -33,6 +39,10 @@ class SweetShop:
         elif reverse == True:
             return sorted(self.sweets , key = lambda sweet: sweet.sweet_price_per_kg ,reverse=True)
         return None
+    
+    def purchase_sweet(self, id, quantity):
+        pass
+
         
 
     def get_all_sweets(self):

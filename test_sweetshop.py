@@ -47,6 +47,18 @@ class TestSweetShop(unittest.TestCase):
         result_descending = shop.sort_sweets_by_price(reverse = True)
         self.assertEqual(result_descending[0].sweet_price_per_kg,900)
 
+    def test_purschase_sweet(self):
+        shop = SweetShop()
+        shop.add_sweet(1,"Kaju Katli","sweet",900,5)
+
+        # purchasing 3 sweets hence stock should reduce to 2
+        shop.purchase_sweet(1,3)
+        sweet = shop.search_sweet_by_id(1)
+        self.assertEqual(sweet.sweet_in_stock,2)
+
+        # purchasing 5 sweets hence should fail saying not enough stock
+        with self.assertRaises(ValueError):
+            shop.purchase_sweet(1,5)
 
 
         
