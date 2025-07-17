@@ -63,8 +63,8 @@ class TestSweetShop(unittest.TestCase):
     def test_restock_sweet(self):
         shop = SweetShop()
         shop.add_sweet(1,"Kaju Katli","sweet",900,5)
+        shop.restock_sweet(1,5)
         sweet = shop.search_sweet_by_id(1)
-        sweet.restock_sweet(5)
         self.assertEqual(sweet.sweet_in_stock,10)
 
 

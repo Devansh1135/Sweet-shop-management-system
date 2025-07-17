@@ -50,6 +50,14 @@ class SweetShop:
         
         sweet.sweet_in_stock -= quantity
 
+    def restock_sweet(self,id,quantity):
+        sweet = self.search_sweet_by_id(id)
+        if not sweet:
+            raise ValueError("Sweet not found")
+        
+        sweet.sweet_in_stock += quantity
+        
+
         
 
     def get_all_sweets(self):
