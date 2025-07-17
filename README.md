@@ -31,18 +31,15 @@ pip install flask
 
 ## Running the Project
 
-1. **Clone the repository**:
+1. Clone the repository:
 
-```bash
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
 
-2. **Run the Flask app**:
+2. Run the Flask app:
 
-```bash
 python app.py
 
-3. **Open your webpage and navigate to**:
+3. Open your webpage and navigate to:
 
-```bash
 http://127.0.0.1:5000/
