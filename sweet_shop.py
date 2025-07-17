@@ -26,6 +26,9 @@ class SweetShop:
             if sweet.sweet_category == category:
                 return sweet
         return None
+    
+    def sort_sweets_by_price(self, reverse = False):
+        pass
 
     def get_all_sweets(self):
         return self.sweets
