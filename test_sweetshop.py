@@ -41,12 +41,11 @@ class TestSweetShop(unittest.TestCase):
         shop.add_sweet(3,"Motichoor Ladoo","sweet",450,5)
         #test case for sorting in ascending price
         result_ascending = shop.sort_sweets_by_price()
-        self.assertEqual(result_ascending[0].sweet_price_kg,350)
+        self.assertEqual(result_ascending[0].sweet_price_per_kg,350)
 
         #test case for sorting in descending price
         result_descending = shop.sort_sweets_by_price(reverse = True)
-        result_descending= shop.sort_by_price()
-        self.assertEqual(result_descending[0].sweet_price_kg,900)
+        self.assertEqual(result_descending[0].sweet_price_per_kg,900)
 
 
 

@@ -28,7 +28,12 @@ class SweetShop:
         return None
     
     def sort_sweets_by_price(self, reverse = False):
-        pass
+        if reverse == False:
+            return sorted(self.sweets , key = lambda sweet: sweet.sweet_price_per_kg)
+        elif reverse == True:
+            return sorted(self.sweets , key = lambda sweet: sweet.sweet_price_per_kg ,reverse=True)
+        return None
+        
 
     def get_all_sweets(self):
         return self.sweets
