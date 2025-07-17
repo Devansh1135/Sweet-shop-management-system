@@ -1,16 +1,48 @@
 # Sweet Shop Management System
 
-A simple Python-based sweet shop inventory and purchase management system using OOP and TDD.
+A simple sweet shop management system implemented in Python with a Flask frontend.  
+This project allows users to add, delete, search, sort, purchase, and restock sweets via a web interface.
+
+---
 
 ## Features
 
-- Add, search, sort, restock, and purchase sweets.
-- Prevents over-purchasing if stock is insufficient.
-- Uses `unittest` for test-driven development (TDD).
+- Add new sweets with id, name, category, price, and stock quantity.
+- Delete sweets by ID.
+- Search sweets by ID, name, or category.
+- Sort sweets by price (ascending or descending).
+- Purchase sweets, which reduces stock if enough quantity is available.
+- Restock sweets by adding to current stock.
+- Simple, clean web UI using Flask and Bootstrap.
 
-## Setup & Run
+---
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/sweet-shop-management.git
-   cd sweet-shop-management
+## Setup and Installation
+
+### Requirements
+
+- Python 3.6+
+- Flask
+
+### Install dependencies
+
+```bash
+pip install flask
+
+## Running the Project
+
+1. **Clone the repository**:
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+
+2. **Run the Flask app**:
+
+```bash
+python app.py
+
+3. **Open your webpage and navigate to**:
+
+```bash
+http://127.0.0.1:5000/
