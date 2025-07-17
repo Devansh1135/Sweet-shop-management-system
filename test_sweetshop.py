@@ -19,6 +19,19 @@ class TestSweetShop(unittest.TestCase):
         self.assertEqual(len(sweets),1)
         self.assertEqual(sweets[0].sweet_id,2)
 
+    def test_search_sweet(self):
+        shop = SweetShop()
+        shop.add_sweet(1,"Kaju Katli","sweet",900,5)
+        result = shop.search_sweet_by_name("Kaju Katli")
+        self.assertEqual(result.sweet_id,1)
+
+    def test_search_category(self):
+        shop = SweetShop()
+        shop.add_sweet(1,"Kaju Katli","sweet",900,5)
+        result = shop.search_sweet_by_category("sweet")
+        self.assertEqual(result.sweet_id,1)
+
+
         
 if __name__ == '__main__':
     unittest.main()

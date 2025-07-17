@@ -14,6 +14,19 @@ class SweetShop:
                 self.sweets.remove(sweet)
                 return True
         return False
+    
+    def search_sweet_by_name(self,name):
+        for sweet in self.sweets:
+            if sweet.sweet_name == name:
+                return sweet
+        return None
+    
+    def search_sweet_by_category(self,category):
+        for sweet in self.sweets:
+            if sweet.sweet_category == category:
+                return sweet
+        return None
 
     def get_all_sweets(self):
         return self.sweets
+    
