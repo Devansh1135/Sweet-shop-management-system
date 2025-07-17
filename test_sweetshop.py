@@ -67,9 +67,6 @@ class TestSweetShop(unittest.TestCase):
         sweet = shop.search_sweet_by_id(1)
         self.assertEqual(sweet.sweet_in_stock,10)
 
-
-
-
-        
+     
 if __name__ == '__main__':
     unittest.main()

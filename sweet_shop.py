@@ -58,8 +58,6 @@ class SweetShop:
         sweet.sweet_in_stock += quantity
         
 
-        
-
     def get_all_sweets(self):
         return self.sweets
     
