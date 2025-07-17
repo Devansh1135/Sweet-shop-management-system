@@ -41,7 +41,14 @@ class SweetShop:
         return None
     
     def purchase_sweet(self, id, quantity):
-        pass
+        sweet = self.search_sweet_by_id(id)
+        if not sweet:
+            raise ValueError("Sweet not found")
+
+        if sweet.sweet_in_stock < quantity :
+            raise ValueError("Not enough sweets in stock")
+        
+        sweet.sweet_in_stock -= quantity
 
         
 
