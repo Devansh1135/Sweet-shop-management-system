@@ -5,6 +5,9 @@ This project allows users to add, delete, search, sort, purchase, and restock sw
 
 ---
 
+![SweetShop Demo](static/Images/Home-page.png)
+
+
 ## Features
 
 - Add new sweets with id, name, category, price, and stock quantity.

@@ -5,6 +5,8 @@ class SweetShop:
         self.sweets = []
 
     def add_sweet(self, id,name,category,price,quantity):
+        if self.search_sweet_by_id(id):
+            raise ValueError(f"sweet with id {id} already exists !")
         sweet = Sweet(id,name,category,price,quantity)
         self.sweets.append(sweet)
 
